@@ -15,8 +15,8 @@ int main(int argc, char* argv[]){
     status = mycp(argv[1], argv[2]);
 
     if(status == -1){
-        printf("No se pudo realizar la copia del archivo de origen en el archivo de destino\n");
-        exit(-1);
+        fprintf(stderr,"No se pudo realizar la copia del archivo de origen en el archivo de destino\n");
+        return -1;
     }
 
     return 0;
