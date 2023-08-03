@@ -8,7 +8,7 @@ int main(int argc, char* argv[]){
     int status;
 
     if(argc < 3){
-        printf("No se paso por parametro el nombre del archivo de origen y/o destino\n");
+        fprintf(stderr,"No se paso por parametro el nombre del archivo de origen y/o destino\n");
         return -1;
     }
 
